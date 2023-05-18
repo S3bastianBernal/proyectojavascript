@@ -1,0 +1,90 @@
+
+body{
+    background-image: url(https://64.media.tumblr.com/d10e3874f350fd1a71fcb0a245b4919d/a1e5fc41e039b8b5-82/s1280x1920/851167185cfbaf928ef80de6bf7dc43e489248ff.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+header{
+    text-align: center;
+    font-size: 2rem;
+    background: -webkit-linear-gradient(left top, rgb(47, 0, 255), rgb(162, 0, 255));
+    background: linear-gradient(to bottom right, rgb(4, 0, 255), rgb(183, 0, 255));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 25px aqua;
+}
+
+
+.cuadro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.contenido-cuadro{
+    padding: 2rem;
+    box-sizing: inherit;
+    
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.user{
+    margin-top: 1rem;
+}
+
+.user input{
+    text-align: center;
+    padding-top: 0.4rem ;
+    padding-bottom: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}
+
+.user span{
+    font-size: 2rem;
+}
+
+.datos .a{
+    margin-top: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+.datos a{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.a:hover{
+    box-shadow: 0 0 25px orangered;
+    padding: 2rem 3rem;
+    transition: .5s ease;
+    font-size: 1rem;
+}
+
+.datos a:hover{
+    text-shadow: 0 0 30px aqua;
+    font-size: 3rem;
+    transition: .7s ease;
+}
+
+

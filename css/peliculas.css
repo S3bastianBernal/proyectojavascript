@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../img/estrellas.gif);
+}
+
+.relleno{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.relleno a{
+    text-decoration: none;
+    background: linear-gradient(to bottom right, rgb(213, 5, 255), rgb(12, 239, 255));
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+}
+
+.relleno a:hover{
+    padding: 2rem 6rem;
+    box-shadow: 0 0 40px purple ;
+    transition: .5s ease;
+}
+
+.peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.caratula a{
+    width: 0;
+    flex-grow: 1;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.caratula a{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+    height: 600px;
+    opacity: 1;
+    transition: .5s ease;
+    filter: contrast(70%);
+}
+
+.caratula a:hover{
+    width: 150px;
+    opacity: 1;
+    filter: contrast(110%);
+}
+
+h1{
+    font-size: 6rem;
+    text-align: center;
+    background: linear-gradient(to bottom right, rgb(213, 5, 255), rgb(12, 239, 255));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#nombre{
+    padding: 0.5rem;
+}
+#genero{
+    padding: 0.5rem;
+}
+
+
+
+@media (min-width:768px) and (max-width:1023px) {
+    .peliculas{
+        display: grid;
+        grid-template-columns: repeat(3,270px);
+        grid-template-rows: repeat(4);
+        margin: 0;
+    }
+
+    .caratula a{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 290px;
+        height: 600px;
+        opacity: 0.9;
+        transition: .8s ease;
+    }
+}
+
+@media (max-width:764px){
+    .peliculas{
+        display: grid;
+        grid-template-columns: repeat(2,270px);
+        grid-template-rows: repeat(4);
+        margin: 0;
+    }
+
+    .caratula a{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 270px;
+        height: 500px;
+        opacity: 0.9;
+        transition: .8s ease;
+        filter: contrast(70%)
+    }
+
+    .caratula a:hover{
+        cursor: crosshair;
+        width: 150px;
+        opacity: 1;
+        filter: contrast(110%);
+    }
+}
+
+

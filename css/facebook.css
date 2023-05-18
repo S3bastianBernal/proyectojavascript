@@ -1,0 +1,83 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    background-image: url(https://media.tenor.com/kWO_LbBMUTgAAAAC/retrodrive-retro.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    background: rgb(72,225,255);
+    background: linear-gradient(90deg, rgba(72,225,255,1) 18%, rgba(20,105,254,1) 53%, rgba(0,20,255,1) 83%); 
+    font-size: 8rem;
+    opacity: .8;
+    color: white;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contacto img{
+    height: 400px;
+}
+
+.contacto-contenido{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
+.contacto-contenido img{
+    border-radius: 20rem ;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.texto a{
+    border:  solid aqua;
+    color: black;
+    background-color: aqua;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 3rem;
+    font-weight: 5rem;
+}
+
+.texto p{
+    color: white;
+    font-size: 3rem;
+}
+
+.texto a:hover{
+    padding: 2rem 4rem;
+    transition: .5s ease;
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:768px){
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

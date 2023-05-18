@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body{
+    background-color: #4a4a4a;
+    color: blue;
+    background-image: url(/img/estrellas.gif);
+}
+
+html{
+    margin-left: 0.1rem;
+}
+
+.borde{
+    background-color: #363636;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.1rem;
+    font-size: 1.1rem;
+    justify-content: center;
+
+}
+
+.navegacion a:hover{
+    text-shadow:0 0 30px aqua;
+    color: aqua;
+}
+
+div a{
+    margin: 0 2rem 0 2rem;
+}
+
+@media(min-width:76.8rem){
+    .navegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:.1rem;
+    }
+}
+
+.navegacion a{
+    background-color:#363636;
+    text-decoration: none;
+    color: white;
+}
+
+/* .navegacion a:hover{
+    color:honeydew;
+} */
+
+.decorar a{
+    background-color: orange;
+    border-radius: 2rem;
+    padding: .2rem;
+}
+
+.decorar2 a{
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
+    padding: .2rem
+}
+
+.decorar a:hover{
+    background-color: orange;
+    color: black;
+}
+
+.decorar2 a:hover{
+    background-color: white;
+    box-shadow: 0 0 40px orangered;
+    color:coral;
+}
+
+.decorar2{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.5rem;
+    border-radius: 5rem;
+}
+
+input{
+    border-radius:1rem; 
+    height:40px; 
+    width:300px;
+
+}
+
+input:hover{
+    box-shadow: 0 0 25px aqua;
+}
+
+.Imagen  img {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin: 0 0 0 -2rem;
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 6rem;
+    background: -webkit-linear-gradient(left top, rgb(211, 248, 45), rgb(255, 0, 0));
+    background: linear-gradient(to bottom right, rgb(228, 247, 65), rgb(255, 0, 0));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+
+
+.galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.serie a{
+    width: 0;
+    flex-grow: 1;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.serie a{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 160px;
+    height: 690px;
+    opacity: 1;
+    transition: .5s ease;
+    filter: contrast(70%);
+}
+
+.serie a:hover{
+    width: 400px;
+    opacity: 1;
+    filter: contrast(110%);
+}
+
+
+ @media (min-width:768px) and (max-width:1023px){
+    .contactos{
+        display: grid;
+        grid-template-columns: repeat(2,270px);
+    }
+
+    .conta{
+        margin-top: 4rem;
+        margin: 1;
+    } 
+
+}
+
+@media (max-width:768px){
+    .contactos{
+        display: grid;
+        grid-template-columns: repeat(2,270px);
+    }
+
+    .conta{
+        margin-top: 4rem;
+        margin: 1rem;
+    }
+    
+}
+
+.peliculas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.caratula a{
+    width: 0;
+    flex-grow: 1;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.caratula a{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 160px;
+    height: 690px;
+    opacity: 1;
+    transition: .5s ease;
+    filter: contrast(70%);
+}
+
+.caratula a:hover{
+    width: 380px;
+    opacity: 1;
+    filter: contrast(130%);
+}
+
+h1{
+    font-size: 8rem;
+    text-align: center;
+    background: linear-gradient(to bottom right, rgb(213, 5, 255), rgb(12, 239, 255));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.barra-contactos{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.barra-contactos .contacto a{
+    position: relative;
+    display: block;
+    width: 8rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    background: #4E4E4E;
+    border-radius: 10px;
+    font-size: 2.2rem;
+    color: #949292;
+    transition: 5.s;
+
+}
+
+.barra-contactos .contacto a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #0197fc;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+
+}
+
+.barra-contactos .contacto a:hover:before{
+    transform: scale(1.2);
+    box-shadow: 
+            0 0 15px #0197fc;
+    filter: blur(3px);
+}
+
+.barra-contactos .contacto a:hover{
+    color: #7ec9fa;
+    box-shadow: 
+            0 0 15px #0197fc;
+    text-shadow: 
+            0 0 15px #0197fc;
+}
+
+
+@media (min-width:768px) and (max-width:1023px){
+    .peliculas{
+        display: grid;
+        grid-template-columns: repeat(3,270px);
+        margin: 0;
+    }
+    .caratula a{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 220px;
+        height: 500px;
+        opacity: 1;
+        transition: .5s ease;
+        filter: contrast(70%);
+    }
+    .caratula a:hover{
+        width: 300px;
+        opacity: 1;
+        filter: contrast(110%);
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(3,270px);
+        margin: 0;
+    }
+    .serie a{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 220px;
+        height: 500px;
+        opacity: 1;
+        transition: .5s ease;
+        filter: contrast(70%);
+    }
+    .serie a:hover{
+        width: 300px;
+        opacity: 1;
+        filter: contrast(110%);
+    }
+}
+
+@media (max-width:768px){
+    .peliculas{
+        display: grid;
+        grid-template-columns: repeat(2,270px);
+        margin: 0;
+    }
+    .caratula a{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 220px;
+        height: 500px;
+        opacity: 1;
+        transition: .5s ease;
+        filter: contrast(70%);
+    }
+    .caratula a:hover{
+        width: 120px;
+        opacity: 1;
+        filter: contrast(110%);
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2,270px);
+        margin: 0;
+    }
+    .serie a{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 220px;
+        height: 500px;
+        opacity: 1;
+        transition: .5s ease;
+        filter: contrast(70%);
+    }
+    .serie a:hover{
+        width: 120px;
+        opacity: 1;
+        filter: contrast(110%);
+    }
+    
+}

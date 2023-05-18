@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+.body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 1rem;
+    gap: 1rem;
+}
+#algo{
+    border: solid;
+    border-radius: 0.6rem;
+    background-color: rgb(214, 214, 214);
+    border-color: rgb(0, 0, 0);
+}
+
+body{
+    background-image: url(/img/fondoMangas.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#algo p{
+    color: rgb(0, 0, 0);
+}
+#algo h5{
+    color: rgb(255, 0, 0);
+}
+#algo button{
+    border-radius: 1rem;
+    border: 0;
+    background-color: aquamarine;
+    padding: 0.3rem;
+}
+#genero{
+    margin: -2rem 0 0 54rem;
+}
+#buscador{
+    margin: 1.5rem 0 0 24rem;
+}
+#buscador input{
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+body h1{
+    text-align: center;
+    color:rgb(255, 0, 136)
+}
+#body-manga .alert{
+    font-size: 4rem;
+    color: red;
+}

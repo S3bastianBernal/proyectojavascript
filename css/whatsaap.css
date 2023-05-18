@@ -1,0 +1,63 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    background-image: url(https://i.pinimg.com/originals/05/7a/6e/057a6eccd9d0670af4085bc6065701a6.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    background: rgb(132,255,72);
+    background: linear-gradient(90deg, rgba(132,255,72,1) 18%, rgba(82,254,20,1) 53%, rgba(0,255,28,1) 83%); 
+    font-size: 8rem;
+    opacity: .8;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto img{
+    height: 400px;
+}
+
+.contacto-contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.texto a{
+    border:  solid rgb(48, 238, 48);
+    color: black;
+    background-color:rgb(48, 238, 48);
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 3rem;
+    font-weight: 5rem;
+}
+
+.texto p{
+    color: white;
+    font-size: 3rem;
+    text-shadow: 0 0 40px rgb(48, 238, 48);
+}
+
+.texto a:hover{
+    padding: 2rem 4rem;
+    transition: .5s ease;
+    border-radius: 3rem;
+}

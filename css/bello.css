@@ -1,0 +1,155 @@
+h1{
+    text-align: center;
+    color: red;
+    background: linear-gradient(to bottom right, rgb(154, 3, 255), rgb(19, 0, 65));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 0;
+    font-size: 3.5rem;
+}
+.inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.inicio a{
+    text-decoration: none;
+    background: linear-gradient(to bottom right, rgb(213, 5, 255), rgb(12, 239, 255));
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.inicio a:hover{
+    padding: 2rem 4rem;
+    box-shadow: 0 0 40px purple;
+    transition: .5s ease;
+    border-radius: 3rem;
+}
+
+h1{
+    border: 30rem;
+}
+.h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, rgb(213, 5, 255), rgb(12, 239, 255));
+    opacity: 0.94;
+    padding: 1rem;
+    border: 0;
+
+}
+#selectores{
+    display: flex;
+    gap: 3rem;
+}
+body{
+    margin: 0;
+    background-image: url(https://media.tenor.com/sJ103QEapKsAAAAC/space-galaxy.gif);
+    image-orientation: 2rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+h2{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(left top, rgb(211, 248, 45), rgb(255, 0, 0));
+    background: linear-gradient(to bottom right, rgb(228, 247, 65), rgb(255, 0, 0));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(7,270px);
+    grid-template-rows: repeat(4);
+    margin: 0 0 0 0;
+}
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.serie a{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+    height: 600px;
+    opacity: 0.8;
+    transition: .8s ease;
+}
+.serie a:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(3,270px);
+        grid-template-rows: repeat(4);
+        margin: 0;
+    }
+
+    .serie a{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 400px;
+        height: 500px;
+        opacity: 0.9;
+        transition: .8s ease;
+    }
+}
+
+@media (max-width:764px){
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2,270px);
+        grid-template-rows: repeat(4);
+        margin: 0;
+    }
+
+    .serie a{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 450px;
+        height: 500px;
+        opacity: 0.9;
+        transition: .8s ease;
+        filter: contrast(70%)
+    }
+
+    .serie a:hover{
+        cursor: crosshair;
+        width: 350px;
+        opacity: 1;
+        filter: contrast(110%);
+    }
+}
+.padre{
+    margin-top: 1rem;
+}
+
+#nombre{
+    padding: 0.5rem 5rem 0.5rem 0.5rem;
+}
+#genero{
+    padding: 0.5rem 5rem 0.5rem 0.5rem;
+}
